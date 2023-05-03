@@ -40,7 +40,7 @@ const studentSchema = new Schema({
   }],
 
 })
-
+// checking 123
 // Compiling Student Schema
 const studentModel =  mongoose.model('student',studentSchema)
 
