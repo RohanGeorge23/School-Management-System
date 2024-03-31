@@ -40,44 +40,9 @@ const studentSchema = new Schema({
   }],
 
 })
-// checking 123
-// Compiling Student Schema
+
 const studentModel =  mongoose.model('student',studentSchema)
 
-// Creating Sample Student
-// const createStu=async()=>{
-//   try {
-//     const studentDoc = new studentModel({
-//       first_name:"rohit",
-//       last_name:"george",
-//       age:21,
-//       dob:"1994-11-23",
-//       class:4,
-//       whatsapp_num:90082393184,
-//       email:'rohit7@gmail.com',
-//       parent_gaurdian_detail:[{
-//         parent_gaurdian_name:'Rajan George',
-//         relationship_with_student:'father',
-//         occupation:'Pvt Job',
-//         employers_name:'K&Q',
-//         monthly_income:77000,
-//         email_address:'rg@23.com'
-//       }],
-//       religion:'Christianity',
-//       caste:'General',
-//       minority:false,
-//       mother_tongue:'malayalam'
-
-//     })
-
-//     console.log(studentDoc)
-    
-//     const savedDoc = await studentDoc.save()
-    
-//   } catch (error) {
-//     console.log('err',error)
-//   }
-// }
 
 module.exports = studentModel
 
